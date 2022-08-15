@@ -32,11 +32,10 @@ CPFValidation.prototype.getDigit = function (partialCPF) {
 
 CPFValidation.prototype.isSequency = function () {
   return this.cleanedCPF[0].repeat(this.cleanedCPF.length) === this.cleanedCPF;
-}
+};
 
 const cpf2 = new CPFValidation("705.484.450-52");
 const cpf3 = new CPFValidation("222.222.222-22");
-
 
 console.log(cpf2.isValid());
 console.log(cpf3.isValid());
